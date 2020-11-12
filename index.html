@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="/style.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+
+    <!-- setting name section -->
+    <section class="login-section">
+        <form class="setting-form">
+            <h1 class="title">What's your name?</h1>
+            <div class="login-control">
+                <input type="text" id="login" placeholder="e.g. John Doe">
+                <button type="submit" class="submit-user">Continue</button>
+            </div>
+            <p class="valid-value">Name must to contains at least 5 characters</p>
+        </form>
+    </section>
+
+    <!-- setting age section -->
+    <section class="age-section">
+        <form class="age-form">
+            <h1 class="title">How old are you?</h1>
+            <div class="age-control">
+                <input type="number" id="age" placeholder="e.g. 21">
+                <button type="submit" class="submit-user-age">Continue</button>
+            </div>
+            <p class="valid-value">Name must to contains at least 5 characters</p>
+        </form>
+    </section>
+
+    <!-- content section -->
+    <section class="section-container">
+        <nav class="navbar">
+            <p class="user"></p>
+            <button type="button" class="settings">
+                <i class="fas fa-ellipsis-h "></i>
+            </button>
+            <div class="settings-box">
+                <li><a href="#" class="setting-section" id="acc"><i class="fas fa-user"></i>Account</a></li>
+                <li><a href="#" class="setting-section" id="col"><i class="fas fa-palette"></i>Colors</a></li>
+            </div>
+        </nav>
+        <div class="content">
+            <!-- form -->
+            <div class="task-window">
+                <form class="todo-form">
+                    <p class="alert"></p>
+                    <div class="heading">
+                        <button type="button" class="arrow-left"><i class="fas fa-chevron-left"></i></button>
+                        <div class="date">
+                            <h3 class="day"></h3>
+                            <p class="datum"></p>
+                        </div>
+                        <button type="button" class="arrow-right"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="todo" placeholder="Add a task...">
+                        <button type="submit" class="submit-btn">submit</button>
+                    </div>
+                </form>
+                <!-- list -->
+                <div class="todo-container">
+                    <div class="todo-list"></div>
+                    <!-- clear btn -->
+                    <button type="button" class="clear-btn">Clear items</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- setting section -->
+    <section class="settings-container">
+        <div class="content-container">
+            <nav class="setting-navbar">
+                <a id="acc" class="link active">Account</a>
+                <a id="col" class="link">Colors</a>
+            </nav>
+            <div class="setting-acc-content setting-content active">
+                <!-- username -->
+                <input type="text" id="username" placeholder="e.g. John Doe">
+                <!-- age -->
+                <input type="number" id="userAge" placeholder="e.g. 21">
+
+                <p class="id"></p>
+
+                <!-- submit btn -->
+                <button type="submit" class="submit-save-info" onclick="window.location.reload()">Save Changes</button>
+                <button type="button" class="remove-acc" onclick="window.location.reload()"><i
+                        class="fas fa-exclamation-triangle"></i> Remove Account <i
+                        class="fas fa-exclamation-triangle"></i></button>
+            </div>
+
+            <div class="setting-col-content setting-content">
+                <h1>Coming soon</h1>
+            </div>
+        </div>
+    </section>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
