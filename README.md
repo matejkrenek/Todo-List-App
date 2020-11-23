@@ -11,7 +11,7 @@
   - You can also view here tasks from previous days
 - When you click on the three dots in right hand corner the user edit section will pop up
 
-## What this gave me
+## What this gave to me
 This was actually my first "bigger" project which I was working on. It can seems to be trivial as same as this README file but I'm trying to make this to track my inprovement in coding. In most cases, we can not see our improvement and we do not even relize that improvement because we live with ourselves. This can sometimes be depressing and discourage us from achieving ours goals. Maybe that's why I'm creating this. 
 
 
